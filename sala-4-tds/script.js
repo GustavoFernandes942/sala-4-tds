@@ -27,3 +27,18 @@ function sub(){
     var numero2 = document.getElementById("n8").valueAsNumber
     document.getElementById('respsub').textContent = numero1 - numero2
 }
+
+const media = () =>{
+    var nota1 = parseFloat(document.getElementById("m1").value)
+    var nota2 = parseFloat(document.getElementById("m2").value)
+    var nota3 = parseFloat(document.getElementById("m3").value)
+    var nota4 = parseFloat(document.getElementById("ma").value)
+    var nota5 = parseFloat(document.getElementById("m5").value)
+    var media = document.getElementById('media')
+    media.innerHTML = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
+    if(resp>=7){
+        media.style.color = 'green'
+    }else{
+        media.style.color = 'red'
+    }
+}
