@@ -32,7 +32,7 @@ const media = () =>{
     var nota1 = parseFloat(document.getElementById("m1").value)
     var nota2 = parseFloat(document.getElementById("m2").value)
     var nota3 = parseFloat(document.getElementById("m3").value)
-    var nota4 = parseFloat(document.getElementById("ma").value)
+    var nota4 = parseFloat(document.getElementById("m4").value)
     var nota5 = parseFloat(document.getElementById("m5").value)
     var media = document.getElementById('media')
     media.innerHTML = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
@@ -40,5 +40,6 @@ const media = () =>{
         media.style.color = 'green'
     }else{
         media.style.color = 'red'
+        media.style.color = 'lightpink'
     }
 }
